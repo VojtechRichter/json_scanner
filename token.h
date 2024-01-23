@@ -2,6 +2,7 @@
 #define JSON_SCANNER_TOKEN
 
 int scan_character(char c);
+const char *get_token_name(char c);
 
 typedef enum {
     TOKEN_LBRACE, // single
