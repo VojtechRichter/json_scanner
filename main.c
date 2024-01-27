@@ -83,7 +83,7 @@ static void traverse(FILE *f)
                     string_value[size] = next_char;
                     next_char = fgetc(f);
                 }
-                ungetc(next_char, f); // don't feel good about this
+                ungetc(next_char, f);
 
                 string_value[size] = '\0';
                 printf("TOKEN_VALUE_NUMBER: %s\n", string_value);
